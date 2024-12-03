@@ -1,27 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+*{
+  color: rgb(178, 178, 178);
+  /* background-color: #09090B; */
+  ;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+
+.slider {
+  margin:0 20px;
+  overflow:"hidden";
+  padding:2rem 0;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.slider img {
+  width: 100%;
+  border-radius:10px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.react-multi-carousel-list {
+padding: 0rem 0 2rem 0;
+}
+
+.custom-dot-list-style button{
+border: none;
+background: rgb(223, 223, 223);
+}
+.react-multi-carousel-dot.react-multi-carousel-dot--active button{
+background: rgb(255, 68, 68) !important;
 }
