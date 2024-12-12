@@ -9,7 +9,7 @@ const ChatWindow = ({ message, isFirstMessage, onSendMessage }) => {
     <>
     
   
-    <div className="w-full h-screen bg-zinc-600 flex flex-col justify-center items-center pb-5 lg:pb-20 md:pb-12">
+    <div className="w-full h-screen bg-zinc-900 flex flex-col justify-center items-center pb-5 lg:pb-20 md:pb-12">
       {/* Message Display Area */}
       <div className="flex flex-col w-[80%] lg:w-[60%] justify-start overflow-y-auto gap-4 h-[80%]  pt-20">
         {message?.map((msg, index) => (
@@ -17,8 +17,8 @@ const ChatWindow = ({ message, isFirstMessage, onSendMessage }) => {
             <div
               className={`p-3 rounded-md text-white max-w-[75%]  inline-block ${
                 msg.sender === "user"
-                  ? "bg-zinc-700 text-right"
-                  : "bg-zinc-500 text-left"
+                  ? "bg-zinc-900 text-right"
+                  : "bg-[#101214] text-left"
               }`}
             >
               {msg.text}

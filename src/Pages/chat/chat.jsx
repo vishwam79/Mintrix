@@ -25,8 +25,8 @@ const chat = () => {
 
 
 
-    <div className="w-full h-screen justify-center bg-zinc-800 flex items-center gap-5 text-white">
-     <div className="w-[20%] sm:block hidden left-0"> <Sidebar /></div>
+    <div className="w-full h-screen justify-center bg-[#09090B] flex items-center gap-3 text-white">
+     <div className="w-[20%] sm:block hidden left-0 "> <Sidebar /></div>
 
      <div className="w-[100%] sm:w-[100%] right-0 flex justify-center items-center">
   <ChatWindow
